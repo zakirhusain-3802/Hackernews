@@ -47,10 +47,11 @@ class SearchResultsAdapter(private val dataSet: List<Hit> ,private val itemInter
 
         val dateString = item.created_at
         val yearsAgo = calculateYearsAgo(dateString)
-        if (yearsAgo >= 0) {
-            holder.dateTextView.text="${yearsAgo} year ago"
+        if (yearsAgo >= 1) {
+            holder.dateTextView.text="${yearsAgo} Year Ago"
         } else {
-            println("Invalid date format")
+            val monthAgo=calculateMonthsAgo(dateString)
+            holder.dateTextView.text="${monthAgo} Month Ago"
         }
 
         holder.newsview.setOnClickListener(){
@@ -81,9 +82,38 @@ fun calculateYearsAgo(dateString: String): Int {
         // Convert milliseconds to years
         val years = (diffInMillis / (1000 * 60 * 60 * 24 * 365.25)).toInt()
 
+
         return years
     } catch (e: Exception) {
         e.printStackTrace()
         return -1 // Return -1 if there's an error parsing the date
     }
+
 }
+fun calculateMonthsAgo(dateString: String): Int {
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd")
+    val currentDate = Calendar.getInstance().time
+
+    try {
+        val parsedDate = dateFormat.parse(dateString)
+
+        val currentCalendar = Calendar.getInstance()
+        currentCalendar.time = currentDate
+
+        val dateCalendar = Calendar.getInstance()
+        dateCalendar.time = parsedDate
+
+        // Calculate the difference in years and months
+        val yearsDiff = currentCalendar.get(Calendar.YEAR) - dateCalendar.get(Calendar.YEAR)
+        val monthsDiff = currentCalendar.get(Calendar.MONTH) - dateCalendar.get(Calendar.MONTH)
+
+        // Calculate the total months difference
+        val totalMonthsDiff = yearsDiff * 12 + monthsDiff
+
+        return totalMonthsDiff
+    } catch (e: Exception) {
+        e.printStackTrace()
+        return -1 // Return -1 if there's an error parsing the date
+    }
+}
+
