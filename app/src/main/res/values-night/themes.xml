@@ -6,5 +6,7 @@
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryVariant">@color/red</item>
         <item name="colorOnPrimary">@color/black</item>
+        <item name="android:statusBarColor" >@color/logjtorange</item>
+        <item name="colorOnSecondary">@color/black</item>
     </style>
 </resources>
