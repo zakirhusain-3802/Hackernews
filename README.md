@@ -46,7 +46,7 @@ To run this app on your local machine, follow these steps:
 3. Build and run the app on an Android emulator or physical device.
 4. Or directly install apk from drive link given below
 5. Drive link :
-   https://drive.google.com/file/d/1L1iocEp8odZVpp5W1H4kZrsQsTWlBC4w/view?usp=drive_link
+   https://drive.google.com/file/d/1l9qnmUjY0z-lpu1Ei-1vLmxkz0wsrpXy/view?usp=sharing
 
 
 ## Screenshots
