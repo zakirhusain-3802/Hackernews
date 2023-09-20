@@ -44,33 +44,20 @@ To run this app on your local machine, follow these steps:
 2. Open the project in Android Studio.
 
 3. Build and run the app on an Android emulator or physical device.
+4. Or directly install apk from drive link given below
+5. Drive link :
+   https://drive.google.com/file/d/1L1iocEp8odZVpp5W1H4kZrsQsTWlBC4w/view?usp=drive_link
 
-## Usage
-
-1. Launch the app on your Android device.
-
-2. On the home screen, you'll find a search field at the top.
-
-3. Enter a query (e.g., "Android development") in the search field and tap the search button.
-
-4. The app will fetch and display search results below the search field.
-
-5. Click on a search result to view the details of the selected post.
-
-6. On the post detail screen, you can see the title, points, and a list of comments associated with the post.
 
 ## Screenshots
 
 Include screenshots of your app here to provide a visual representation of its functionality.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
 
-## Acknowledgments
 
-- Mention any external libraries, resources, or tutorials you used or were inspired by during the development of the app.
+![WhatsApp Image 2023-09-20 at 8 05 31 PM](https://github.com/zakirhusain-3802/Hackernews/assets/66136416/6ab14bc1-6dcf-47c1-b9c7-73a48fa73843)
+![WhatsApp Image 2023-09-20 at 8 05 32 PM](https://github.com/zakirhusain-3802/Hackernews/assets/66136416/0884a3a7-8f7b-432a-ac8f-a44cf7491dc6)
+![WhatsApp Image 2023-09-20 at 8 05 32 PM (1)](https://github.com/zakirhusain-3802/Hackernews/assets/66136416/1fc3fa3f-41f2-4e56-a07c-9e34b2541810)
 
----
 
-Feel free to modify and expand this template to provide additional details about your project. Include screenshots, installation instructions, and any other information that you think would be useful for users or reviewers.
