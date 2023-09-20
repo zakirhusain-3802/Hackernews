@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingVertical="5dp"
+    android:background="#F3F3F3"
+    android:gravity="center"
+    android:id="@+id/newsview"
+    >
+    <TextView
+        android:id="@+id/tittleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Heelo this the title of the News "
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:gravity="left"
+        >
+
+        <TextView
+            android:id="@+id/pointTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="points"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/black"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/authorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/black"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Years agao"
+            android:textSize="12sp"
+            android:paddingHorizontal="10dp"/>
+        <View
+            android:layout_width="1dp"
+            android:background="@color/black"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/commentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:paddingHorizontal="10dp"
+            android:autoSizeMinTextSize="8sp"
+            android:autoSizeMaxTextSize="12sp"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/endBorder"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
